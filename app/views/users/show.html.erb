@@ -1,0 +1,12 @@
+<% provide(:title, @user.username) %>
+<div class="row">
+	<div class="span12">
+		<h1><%= @user.username %></h1>
+		<h3><%= @user.email %></h3>
+		<h4><%= @user.id %>
+		<h5>Registered <%= time_ago_in_words(@user.created_at) %> ago</h5>
+		<h5>Last edited <%= time_ago_in_words(@user.updated_at) %> ago</h5>
+		<h5>Admin? <%= @user.admin %></h5>
+		<h5>Banned? <%= @user.banned %></h5>
+	</div>
+</div>

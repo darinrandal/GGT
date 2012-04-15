@@ -1,0 +1,13 @@
+<%= provide(:title, "All Users") %>
+<h1>All Users</h1>
+
+<ul class="users">
+	<% @users.each do |user| %>
+	<li>
+		<%= link_to user.username, user %>
+		<% if current_user.admin? && !current_user?(user) %>
+			| <%= link_to "delete", user, method: :delete, confirm: "Are you sure you want to delete this user?" %>
+		<% end %>
+	</li>
+	<% end %>
+</ul>
