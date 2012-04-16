@@ -1,8 +1,9 @@
 GGT::Application.routes.draw do
   resources :users
+  resources :posts
   resources :sessions, only: [:new, :create, :destroy]
 
-  root :to => 'statics#home'
+  root :to => 'posts#index'
 
   match '/register', to: 'users#new'
   match '/login', to: 'sessions#new'

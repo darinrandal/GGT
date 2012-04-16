@@ -50,7 +50,7 @@ module SessionsHelper
 	def logged_in_user
 		unless logged_in?
 			store_location
-			redirect_with_flash("You must first log in to access that page", nil, register_path)
+			redirect_with_flash("You must first log in to access that page", :error, login_path)
 		end
 	end
 

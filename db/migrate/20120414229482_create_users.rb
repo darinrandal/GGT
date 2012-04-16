@@ -5,12 +5,11 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :password_digest
       t.string :remember_token
+      t.boolean :admin, :default => false
+      t.boolean :banned, :default => false
 
       t.timestamps
     end
-
-    add_column :users, :admin, :boolean, default: false
-    add_column :users, :banned, :boolean, default: false
 
     add_index :users, :username, unique: true
     add_index :users, :email, unique: true
