@@ -1,0 +1,23 @@
+<% provide(:title, "Add Event") %>
+<h1>Add Event</h1>
+
+<div class="row">
+	<div class="span6 offset3">
+		<%= form_for(@event) do |f| %>
+			<%= render 'shared/error_messages', object: f.object %>
+			<%= f.label :event_type %>
+			<%= f.text_field :event_type %>
+
+			<%= f.label :user_id1 %>
+			<%= f.text_field :user_id1 %>
+
+			<%= f.label :user_id2 %>
+			<%= f.text_field :user_id2 %>
+
+			<%= f.label :post_id %>
+			<%= f.text_field :post_id %>
+
+			<%= f.submit "Add Event", class: "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>

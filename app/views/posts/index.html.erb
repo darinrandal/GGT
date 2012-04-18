@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-<div class="row post">
+<div class="row">
 	<div class="span12">
 		<%= time_ago_in_words(post.created_at) %> ago
 		<span style="float:right;">Post #<%= link_to post.id, post %></span>
