@@ -1,6 +1,7 @@
 GGT::Application.routes.draw do
   resources :users
   resources :posts
+  resources :events
   resources :sessions, only: [:new, :create, :destroy]
 
   root :to => 'posts#index'

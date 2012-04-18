@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 		if @user.save
 			log_in @user
+			event_log(1, @user.id)
 			redirect_with_flash("You have successfully registered", :success)
 		else
 			render 'new'
