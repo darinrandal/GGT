@@ -17,12 +17,8 @@ private
 	end
 
 	def pull_user(user_id)
-		if defined? @users
-			@users[(user_id)-1]
-		else
-			@users = User.all
-			@users[(user_id)-1]
-		end
+		@users = User.all unless defined? @users
+		@users[(user_id)-1]
 	end
 
 	def ago(event)
