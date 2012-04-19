@@ -2,6 +2,7 @@
 <div class="row">
 	<div class="span12">
 		<h1><%= @user.username %></h1>
+		<h3><%= link_to('Events', :controller => 'events', :action => 'user_events', :id => @user.id) %></h3>
 		<h3><%= @user.email %></h3>
 		<h4><%= @user.id %>
 		<h5>Registered <%= time_ago_in_words(@user.created_at) %> ago</h5>

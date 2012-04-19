@@ -1,7 +1,6 @@
 GGT::Application.routes.draw do
-  resources :users
-  resources :posts
-  resources :events
+  resources :users, :posts
+  resources :events, only: :index
   resources :sessions, only: [:new, :create, :destroy]
 
   root :to => 'posts#index'
@@ -9,4 +8,6 @@ GGT::Application.routes.draw do
   match '/register', to: 'users#new'
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
+
+  match '/users/:id/events' => 'events#user_events'
 end

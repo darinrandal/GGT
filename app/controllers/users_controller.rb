@@ -33,7 +33,8 @@ class UsersController < ApplicationController
 
 	def update
 		if @user.update_attributes(params[:user])
-			log_in @user
+			event_log(6, current_user.id, @user.id)
+			log_in @user if current_user? @user
 			redirect_with_flash("Profile successfully updated", :success, @user)
 		else
 			render 'edit'

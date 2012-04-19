@@ -11,7 +11,6 @@ module EventsHelper
 
 private
 	def event_by_name(id)
-		#####[ unknown = 0, register = 1, permaban = 2, unban = 3, trash = 4, untrash = 5, usermod = 6, edit = 7 ]#####
 		events = ['unknown', 'register', 'permaban', 'unban', 'trash', 'untrash', 'usermod', 'edit']
 		events[id]
 	end
