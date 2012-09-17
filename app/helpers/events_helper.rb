@@ -54,7 +54,7 @@ private
 	end
 
 	def event_untrash(event)
-		link_to_user(event.user_id1) + ' untrashed ' + link_to_user(event.user_id2) + '\'s ' + link_to('post', event) + ' ' + ago(event)
+		link_to_user(event.user_id1) + ' untrashed ' + link_to_user(event.user_id2) + '\'s ' + link_to_post('post', event) + ' ' + ago(event)
 	end
 
 	def event_usermod(event)
