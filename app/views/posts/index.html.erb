@@ -1,14 +1,70 @@
-<% @posts.each do |post| %>
-<div class="row">
-	<div class="span12">
-		<%= time_ago_in_words(post.created_at) %> ago
-		<span style="float:right;">Post #<%= link_to post.id, post %></span>
-	</div>
-	<div class="span2">
-		<%= link_to post.user.username, post.user %>
-	</div>
-	<div class="span10">
-		<%= simple_format(post.content) %>
+<div id="mainbody">
+	<div class="ds_container">
+		<div class="grid_12">
+			<div class="pagesection">
+				<%= will_paginate %>
+			</div>
+			<div id="forumposts">
+				<% @posts.each do |post| %>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<%= link_to post.user.username, post.user %>
+							</h4>
+							<ul class="reset smalltext">
+								<!--<li class="title">depressed insomniac</li>-->
+								<li class="avatar">
+									<a href="#">
+										<!--<img class="avatar" src="http://facepunch.com/image.php?u=239086" alt="">-->
+									</a>
+								</li>
+								<li class="postcount">Posts: <%= post.user.postcount %></li>
+								<li class="profile">
+									<ul>
+										<li><a href="#" title="Windows 7" class="new_win"><img src="http://facepunch.com/fp/browser/windows7.png" alt="OS"></a></li>
+										<li><a href="#" title="Google Chrome" class="new_win"><img src="http://facepunch.com/fp/browser/chrome.png" alt="Browser"></a></li>
+										<li><a href="#" title="Events" class="new_win"><img src="http://www.facepunch.com/fp/navbar/events.png" alt="Events"></a></li>
+										<li><a href="#" title="Report" class="new_win"><img src="http://www.facepunch.com/fp/report.png" alt="Report"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="smalltext">« <strong>Post #<%= link_to post.id, post %></strong> <%= time_ago_in_words(post.created_at) %> ago »</div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner">
+									<%= simple_format(post.content) %>
+								</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<!--<div class="smalltext modified">
+								Last edited at 11:47am on July 24th, 2012
+							</div>
+							<!--<div class="signature">
+								<div align="center">
+									I am the HOBO
+								</div>
+							</div>-->
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<% end %>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				<div class="pagelinks floatleft">Pages: [<strong>1</strong>]</div>
+			</div>
+			<br class="clear">
+		</div>
+		<div class="clr"></div>
 	</div>
 </div>
-<% end %>

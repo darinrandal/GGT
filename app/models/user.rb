@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :banned, :email, :password, :password_confirmation, :username
+  attr_accessible :banned, :email, :password, :password_confirmation, :username, :postcount
   has_secure_password
 
   has_many :posts

@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :password_digest
       t.string :remember_token
+      t.integer :postcount, :default => 0
       t.boolean :admin, :default => false
       t.boolean :banned, :default => false
 

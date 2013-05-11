@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'paperclip'
 
 group :development, :test do
 	gem 'sqlite3'
@@ -13,5 +14,4 @@ end
 
 group :assets do
   gem 'sass-rails'
-  gem 'coffee-rails'
 end

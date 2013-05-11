@@ -1,0 +1,371 @@
+/* Normal, standard links. */
+a:link, a:visited
+{
+	color: #047cc1;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Links that open in a new window. */
+a.new_win:link, a.new_win:visited
+{
+	text-decoration: none;
+}
+a.new_win:hover
+{
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* Set a fontsize that will look the same in all browsers. */
+body
+{
+	background: #f2f2f2;
+	font: 13px/150% "Helvetica Neue", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body, td, th, tr
+{
+	color: #555;
+}
+
+form
+{
+	padding: 0;
+	margin: 0;
+}
+
+input, button, select, textarea
+{
+	font: 95%/115% verdana, Helvetica, sans-serif;
+	color: #000;
+	background: #fff;
+	border: 1px solid #7f9db9;
+	padding: 2px;
+}
+
+select
+{
+	padding: 0;
+}
+
+textarea
+{
+	font: 100%/130% verdana, Helvetica, sans-serif;
+}
+
+input:hover, textarea:hover, button:hover, select:hover
+{
+	border: 1px solid #454545;
+}
+
+input:focus, textarea:focus, button:focus, select:focus
+{
+	border: 1px solid #b9b9b9;
+}
+
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #333;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset
+{
+	border: 1px solid #c4c4c4;
+	padding: 1em;
+	margin: 0 0 0.5em 0;
+}
+
+a img
+{
+	border: 0;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+em
+{
+	font-style: italic;
+}
+
+.floatleft
+{
+	float: left;
+}
+
+.flow_hidden
+{
+	overflow: hidden;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.smalltext
+{
+	font-size: 11px;
+}
+
+ul.reset, ul.reset li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+blockquote.bbc_standard_quote
+{
+	font-size: 90%;
+	line-height: 1.4em;
+	background: #EBF2F6;
+	border: 1px solid #d5e2e7;
+	padding: 10px;
+	margin: 0.1em 0 0.3em 0;
+	overflow: auto;
+}
+
+.quoteheader
+{
+	color: #444;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 0.3em;
+}
+
+.quoteheader a {
+	color: #444;
+}
+
+.windowbg
+{
+	background-color: #f8f8f8;
+}
+
+.windowbg2
+{
+	background-color: #fff;
+}
+.windowbg3
+{
+	background-color: #e3e3e3;
+}
+
+.pagesection
+{
+	font-size: 0.9em;
+	padding: 0.2em;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+
+.pagelinks
+{
+	padding: 0.6em 0 0.4em 0;
+}
+
+.post
+{
+	overflow: auto;
+	line-height: 1.4em;
+	padding: 0.1em 0;
+}
+
+.signature
+{
+	width: 98%;
+	overflow: auto;
+	clear: right;
+	padding: 1em 0 3px 0;
+	border-top: 1px solid #ddd;
+	line-height: 1.4em;
+	font-size: 0.85em;
+}
+
+.windowbg span.topslice
+{
+	display: block;
+	padding-left: 20px;
+	background: url(../images/theme/main_block.png) 0 -30px no-repeat;
+}
+
+.windowbg span.topslice span
+{
+	display: block;
+	background: url(../images/theme/main_block.png) 100% -30px no-repeat;
+	height: 11px;
+}
+
+.windowbg span.botslice
+{
+	display: block;
+	padding-left: 20px;
+	background: url(../images/theme/main_block.png) 0 -40px no-repeat;
+	font-size: 5px;
+	line-height: 5px;
+	margin-bottom: 0.2em;
+}
+
+.windowbg span.botslice span
+{
+	display: block;
+	background: url(../images/theme/main_block.png) 100% -40px no-repeat;
+	height: 11px;
+}
+
+h3, h4
+{
+	padding-bottom: 3px;
+}
+
+#forumposts
+{
+	clear: both;
+}
+
+.post_wrapper
+{
+	float:left;
+	width:100%;
+}
+.poster
+{
+	float: left;
+	width: 15em;
+}
+.postarea, .moderatorbar
+{
+	margin: 0 0 0 16em;
+}
+.postarea div.flow_hidden
+{
+	width: 100%;
+}
+
+.moderatorbar
+{
+	clear: right;
+}
+/* poster details and list of items */
+.poster h4, .poster ul
+{
+	padding: 0;
+	margin: 0 1em 0 1.5em;
+	color: #888;
+}
+.poster h4
+{
+	margin: 0.2em 0 0.4em 1.1em;
+	font-size: 120%;
+}
+.poster h4, .poster h4 a
+{
+	color: #404040;
+}
+.poster ul ul
+{
+	margin: 0.3em 1em 0 0;
+	padding: 0;
+}
+.poster ul ul li
+{
+	display: inline;
+}
+.poster li.stars, .poster li.avatar, .poster li.blurb, li.postcount, li.im_icons ul
+{
+	margin-top: 0.5em;
+}
+.poster li.avatar
+{
+	overflow: hidden;
+}
+
+.keyinfo
+{
+	float: left;
+	width: 50%;
+}
+
+.post
+{
+	margin-top: 0.5em;
+	clear: right;
+}
+.inner
+{
+	padding: 1em 1em 4px 0;
+	margin: 0 1em 0 0;
+	border-top: 1px solid #ddd;
+}
+
+#forumposts .modified
+{
+	float: left;
+}
+
+#forumposts .signature
+{
+	margin: 1em 0 0 0;
+}
+#forumposts span.botslice
+{
+	clear: both;
+}
+
+#forumposts .post_separator
+{
+	display: none;
+}
+
+dl
+{
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.signature
+{
+	border-top: 1px #ddd solid;
+}
+
+a { outline: none;}
+span, p, form { margin: 0; padding: 0;}
+
+#mainbody { background: #f2f2f2; padding: 20px 0; border-top: 1px solid #e1e1e1;}
+
+#forumposts .windowbg, #forumposts .windowbg2 { border-bottom: 1px solid #ebebeb; }
+
+#forumposts .post { color: #333;}
+
+.ds_container { margin-left: auto; margin-right: auto; width: 960px;}
+
+.grid_12 {display: inline; float: left; margin-left: 10px; margin-right: 10px;}
+.ds_container .grid_12 {width: 940px;}
+.clr {clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}

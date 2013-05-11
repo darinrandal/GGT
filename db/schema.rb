@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20120417223111) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "remember_token"
+    t.integer  "postcount",       :default => 0
     t.boolean  "admin",           :default => false
     t.boolean  "banned",          :default => false
     t.datetime "created_at",                         :null => false
